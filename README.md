@@ -12,16 +12,27 @@ Easily track your expenses, analyze spending patterns, and visualize data with i
 
 ## 📂 Project Structure
 ExpenseTracker/
+
 ├── Home.py # Main dashboard
+
 ├── Pages/
+
 │ ├── 1_Add_Expense.py # Add expense
+
 │ ├── 2_View_Expense.py # View expenses based on category
+
 │ ├── 3_View_All_Expenses.py # View all expenses
-| ├── 3_Charts.py # Charts
-│ └── 4_Stats.py # Statistics
+
+│ ├── 4_Charts.py # Charts
+
+│ └── 5_Stats.py # Statistics
+
 ├── db_utils.py # Query handling
+
 ├── dbconnect.py # MySQL connection
+
 ├── requirements.txt
+
 └── README.md
 
 ## 🛠️ Tech Stack
@@ -37,24 +48,34 @@ CREATE DATABASE expense_tracker;
 2. Create table:
 
 CREATE TABLE expenses (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     title VARCHAR(255),
+    
     category VARCHAR(100),
+    
     amount DECIMAL(10,2),
+    
     eDate DATE
+    
 );
 
 ## 🔐 Environment Variables
 Create a `.env` file in the root folder:
 
 DB_HOST=localhost
+
 DB_USER=root
+
 DB_PASSWORD=yourpassword
+
 DB_NAME=dbexpense
 
 ▶️ Running Locally
 
 pip install -r requirements.txt
+
 streamlit run Home.py
 
 ## 📸 Screenshots
@@ -85,6 +106,7 @@ streamlit run Home.py
 ![Stats 5](screenshots/Stats5.png)
 
 👤 Developer
+
 Built by Harini Neon💚
 
 🔗 [Linkedin](https://www.linkedin.com/in/shree-harini-k-m-a35a42250/)
