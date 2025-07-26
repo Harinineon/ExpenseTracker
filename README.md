@@ -72,7 +72,7 @@ DB_PASSWORD=yourpassword
 
 DB_NAME=dbexpense
 
-▶️ Running Locally
+## ▶️ Running Locally
 
 pip install -r requirements.txt
 
